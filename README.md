@@ -3,11 +3,9 @@
 <ul>
  <ul>
   <li><a href="intro_htmll/index.html " target="_blank">Intro to HTML</a></li>
+<li><a href="index.html2/index.html " target="_blank">HTML5 and Intro to CSS</a></li>
 </ul>
 
 
-# kal-eb.github.io
 
-* [Intro to HTML](https://kal-eb.github.io/Intro_HTML/)
-* [HTML2](https://kal-eb.github.io/html2/)
 
