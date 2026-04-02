@@ -1,67 +1,103 @@
-/* Body Formatting */
+/* Basic reset to clean up default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #e2e8f0; /* Light gray-blue background */
-    font-family: Arial, sans-serif; /* Font family requirement */
+    font-family: Arial, sans-serif;
+    background-color: #e2e8f0;
+    color: #333333;
 }
 
-/* Header Formatting */
+/* Header and Navigation Styling */
 header {
-    background-color: #1e293b; /* Dark slate background */
-    color: #ffffff; /* White text */
-    font-family: "Impact", Charcoal, sans-serif; /* Different font for the header */
-    text-align: center;
-    padding: 25px;
-}
-
-/* Nav Formatting */
-nav {
-    background-color: #3b82f6; /* Bright blue background */
+    background-color: #ff6600; /* Dragon Ball Orange */
     color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Different font for nav */
-    padding: 15px;
     text-align: center;
+    padding: 20px;
 }
 
-/* Formatting anchor tags (links) */
+nav {
+    margin-top: 10px;
+}
+
 nav a {
-    color: #ffffff; /* White text for links */
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     margin: 0 15px;
 }
 
-/* Formatting a:hover (when the mouse is over the link) */
 nav a:hover {
-    color: #facc15; /* Turns yellow when hovering */
+    color: #ffe600; /* Turns Super Saiyan yellow on hover */
 }
 
-/* Main Content Formatting */
+/* --- THE 2-COLUMN LAYOUT --- */
+#container {
+    display: flex; /* This tells the container to put its children side-by-side */
+    max-width: 1000px;
+    margin: 20px auto; /* Centers the whole container on the page */
+    gap: 20px; /* Puts a gap between the main section and the aside */
+    padding: 0 15px;
+}
+
 main {
-    background-color: #ffffff; /* White background */
-    color: #333333; /* Dark gray text */
-    width: 80%; /* Width requirement */
-    margin: 20px auto; /* Margin requirement (also centers the box) */
-    padding: 30px; /* Padding requirement */
-    border: 3px solid #1e293b; /* Border requirement */
+    flex: 2; /* Tells the main section to take up 2/3 of the space */
+    background-color: #ffffff;
+    padding: 25px;
+    border: 3px solid #1e293b;
+    border-radius: 8px;
 }
 
-/* Image Formatting */
-img {
-    width: 250px; /* Resized so they don't overpower the page */
-    border: 4px solid #3b82f6; /* Border requirement */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); /* Box-shadow requirement */
-    border-radius: 10px; /* Border-radius (rounded corners) requirement */
-    margin: 15px 25px 15px 0; /* Margin requirement */
-    float: left; /* Float left requirement */
-}
-
-/* Footer Formatting */
-footer {
-    background-color: #1e293b; /* Dark slate background */
-    color: #ffffff; /* White text */
-    text-align: center; /* Text-align requirement */
+aside {
+    flex: 1; /* Tells the aside to take up 1/3 of the space */
+    background-color: #ffe600; /* Super Saiyan Yellow */
     padding: 20px;
-    clear: both; /* Clear float requirement so the images don't break the footer */
+    border: 3px solid #1e293b;
+    border-radius: 8px;
+    height: fit-content; /* Keeps the aside box from stretching too far down */
+}
+
+/* --- TYPOGRAPHY (Exactly 1 H1, 1 H2, 1 H3) --- */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: #ff6600;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #1e293b;
+    margin: 20px 0 10px 0;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* --- RESPONSIVE IMAGE REQUIREMENT --- */
+.responsive-img {
+    max-width: 100%; /* Never lets the image get wider than its container */
+    height: auto;    /* Keeps the image from getting stretched or squished */
+    display: block;
+    margin: 15px auto;
+    border: 4px solid #1e293b;
+    border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1e293b;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
     margin-top: 20px;
 }
