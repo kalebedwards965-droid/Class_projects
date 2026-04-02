@@ -1,0 +1,67 @@
+/* Body Formatting */
+body {
+    background-color: #e2e8f0; /* Light gray-blue background */
+    font-family: Arial, sans-serif; /* Font family requirement */
+}
+
+/* Header Formatting */
+header {
+    background-color: #1e293b; /* Dark slate background */
+    color: #ffffff; /* White text */
+    font-family: "Impact", Charcoal, sans-serif; /* Different font for the header */
+    text-align: center;
+    padding: 25px;
+}
+
+/* Nav Formatting */
+nav {
+    background-color: #3b82f6; /* Bright blue background */
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Different font for nav */
+    padding: 15px;
+    text-align: center;
+}
+
+/* Formatting anchor tags (links) */
+nav a {
+    color: #ffffff; /* White text for links */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+/* Formatting a:hover (when the mouse is over the link) */
+nav a:hover {
+    color: #facc15; /* Turns yellow when hovering */
+}
+
+/* Main Content Formatting */
+main {
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark gray text */
+    width: 80%; /* Width requirement */
+    margin: 20px auto; /* Margin requirement (also centers the box) */
+    padding: 30px; /* Padding requirement */
+    border: 3px solid #1e293b; /* Border requirement */
+}
+
+/* Image Formatting */
+img {
+    width: 250px; /* Resized so they don't overpower the page */
+    border: 4px solid #3b82f6; /* Border requirement */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); /* Box-shadow requirement */
+    border-radius: 10px; /* Border-radius (rounded corners) requirement */
+    margin: 15px 25px 15px 0; /* Margin requirement */
+    float: left; /* Float left requirement */
+}
+
+/* Footer Formatting */
+footer {
+    background-color: #1e293b; /* Dark slate background */
+    color: #ffffff; /* White text */
+    text-align: center; /* Text-align requirement */
+    padding: 20px;
+    clear: both; /* Clear float requirement so the images don't break the footer */
+    margin-top: 20px;
+}

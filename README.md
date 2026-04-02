@@ -6,6 +6,7 @@
 <li><a href="index.html2/page2.html " target="_blank">HTML5 and Intro to CSS</a></li>
 </ul>
 
-
+<li><a href="index.html3/index.html " target="_blank">HTML5 and Intro to CSS</a></li>
+</ul>
 
 
