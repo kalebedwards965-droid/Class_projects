@@ -7,20 +7,24 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #e2e8f0;
+    background-color: #e2e8f0; /* Brought back the light gray-blue background */
     color: #333333;
 }
 
-/* Header and Navigation Styling */
-header {
-    background-color: #ff6600; /* Dragon Ball Orange */
+/* Header and Footer Styling */
+header, footer {
+    background-color: #1e293b; /* Brought back the dark slate */
     color: #ffffff;
     text-align: center;
     padding: 20px;
+    font-family: "Impact", Charcoal, sans-serif;
 }
 
+/* Navigation Styling */
 nav {
-    margin-top: 10px;
+    background-color: #3b82f6; /* Brought back the bright blue nav bar */
+    padding: 15px;
+    text-align: center;
 }
 
 nav a {
@@ -29,45 +33,46 @@ nav a {
     font-size: 18px;
     font-weight: bold;
     margin: 0 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav a:hover {
-    color: #ffe600; /* Turns Super Saiyan yellow on hover */
+    color: #facc15; /* Keeps the yellow highlight when hovering */
 }
 
-/* --- THE 2-COLUMN LAYOUT --- */
+/* --- THE 2-COLUMN LAYOUT (Keeps your grade safe!) --- */
 #container {
-    display: flex; /* This tells the container to put its children side-by-side */
+    display: flex; 
     max-width: 1000px;
-    margin: 20px auto; /* Centers the whole container on the page */
-    gap: 20px; /* Puts a gap between the main section and the aside */
+    margin: 20px auto; 
+    gap: 20px; 
     padding: 0 15px;
 }
 
 main {
-    flex: 2; /* Tells the main section to take up 2/3 of the space */
+    flex: 2; 
     background-color: #ffffff;
     padding: 25px;
-    border: 3px solid #1e293b;
+    border: 3px solid #1e293b; /* Dark slate border around the main box */
     border-radius: 8px;
 }
 
 aside {
-    flex: 1; /* Tells the aside to take up 1/3 of the space */
-    background-color: #ffe600; /* Super Saiyan Yellow */
+    flex: 1; 
+    background-color: #ffffff; /* Clean white background */
     padding: 20px;
-    border: 3px solid #1e293b;
+    border: 3px solid #3b82f6; /* Bright blue border around the side box */
     border-radius: 8px;
-    height: fit-content; /* Keeps the aside box from stretching too far down */
+    height: fit-content; 
 }
 
-/* --- TYPOGRAPHY (Exactly 1 H1, 1 H2, 1 H3) --- */
+/* --- TYPOGRAPHY --- */
 h1 {
     font-size: 2.5rem;
 }
 
 h2 {
-    color: #ff6600;
+    color: #3b82f6; /* Bright blue subheadings */
     margin-bottom: 15px;
     border-bottom: 2px solid #ccc;
     padding-bottom: 5px;
@@ -85,19 +90,11 @@ p {
 
 /* --- RESPONSIVE IMAGE REQUIREMENT --- */
 .responsive-img {
-    max-width: 100%; /* Never lets the image get wider than its container */
-    height: auto;    /* Keeps the image from getting stretched or squished */
+    max-width: 100%; 
+    height: auto;    
     display: block;
     margin: 15px auto;
-    border: 4px solid #1e293b;
-    border-radius: 5px;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #1e293b;
-    color: #ffffff;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+    border: 4px solid #3b82f6; /* Brought back your bright blue border! */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); /* Brought back your drop shadow! */
+    border-radius: 10px; /* Brought back the rounded corners! */
 }
