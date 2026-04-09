@@ -1,0 +1,107 @@
+/* Basic page setup */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+}
+
+header {
+    background-color: #cc0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Simple Navigation */
+nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    /* This creates the smooth fade effect */
+    transition: color 0.3s ease; 
+}
+
+/* The color it changes to when hovered */
+nav a:hover {
+    color: #cc0000; 
+}
+
+/* The required button in the nav */
+.nav-button {
+    background-color: white;
+    color: #333;
+    padding: 5px 10px;
+    border: 2px solid #ccc;
+    /* Smooth transition for both background and text color */
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.nav-button:hover {
+    background-color: #cc0000;
+    color: white;
+    border-color: #cc0000;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+/* Multi-column layout for the gallery using basic flexbox */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-box {
+    width: 22%; /* 4 columns side by side */
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    /* Adds a smooth transition for the hover lift effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* The subtle lift and shadow effect when hovering over a photo box */
+.gallery-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Simple form styling */
+form p {
+    margin-bottom: 10px;
+}
+
+/* Responsive Rules for Tablet */
+@media (max-width: 800px) {
+    .gallery-box {
+        width: 45%; /* Changes to 2 columns on tablet */
+    }
+}
+
+/* Responsive Rules for Phone */
+@media (max-width: 500px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .gallery-box {
+        width: 100%; /* Stacks to 1 column on phone */
+    }
+}

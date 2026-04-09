@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GR86 Specs</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Toyota GR86 Page</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="specs.html">Specs</a>
+        <a href="contact.html" class="nav-button">Contact</a>
+    </nav>
+
+    <main>
+        <h2>Car Specifications</h2>
+        <ul>
+            <li>Engine: 2.4L 4-Cylinder</li>
+            <li>Horsepower: 228 hp</li>
+            <li>Drive Type: RWD</li>
+            <li>Transmission: Manual</li>
+        </ul>
+    </main>
+</body>
+</html>
