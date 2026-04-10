@@ -103,5 +103,11 @@ form p {
     
     .gallery-box {
         width: 100%; /* Stacks to 1 column on phone */
-    }
+    }/* Keeps the images small, uniform, and perfectly inside the boxes */
+.gallery-box img {
+    width: 100%;          /* Forces it to stay inside the column width */
+    height: 150px;        /* Forces the image to be short/smaller */
+    object-fit: cover;    /* Crops the image perfectly so it doesn't look squished */
+    border-radius: 5px;   /* Keeps the nice curved edges */
+    margin-bottom: 10px;  /* Adds a little space between the picture and the text below it */
 }
