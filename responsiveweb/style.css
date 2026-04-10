@@ -82,9 +82,27 @@ main {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+/* Keeps the images uniform and perfectly proportioned */
+.gallery-box img {
+    width: 100%;          
+    aspect-ratio: 4 / 3;  /* Forces a standard photo shape */
+    object-fit: cover;    
+    border-radius: 5px;   
+    margin-bottom: 10px;  
+}
+
 /* Simple form styling */
 form p {
     margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
 
 /* Responsive Rules for Tablet */
@@ -103,11 +121,5 @@ form p {
     
     .gallery-box {
         width: 100%; /* Stacks to 1 column on phone */
-    }/* Keeps the images small, uniform, and perfectly inside the boxes */
-.gallery-box img {
-    width: 100%;          /* Forces it to stay inside the column width */
-    height: 150px;        /* Forces the image to be short/smaller */
-    object-fit: cover;    /* Crops the image perfectly so it doesn't look squished */
-    border-radius: 5px;   /* Keeps the nice curved edges */
-    margin-bottom: 10px;  /* Adds a little space between the picture and the text below it */
+    }
 }
