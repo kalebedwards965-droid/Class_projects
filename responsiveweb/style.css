@@ -142,7 +142,7 @@ footer {
 }
 /* Responsive Rules for Tablet */
 @media (max-width: 800px) {
-    .gallery-box {
+    .gallery-box, .info-card {
         width: 45%; /* Changes to 2 columns on tablet */
     }
 }
@@ -154,7 +154,8 @@ footer {
         margin: 10px 0;
     }
     
-    .gallery-box {
+    .gallery-box, .info-card {
         width: 100%; /* Stacks to 1 column on phone */
     }
 }
+
