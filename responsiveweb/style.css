@@ -104,7 +104,42 @@ footer {
     padding: 15px;
     margin-top: 20px;
 }
+/* Info Cards Layout for the Home Page */
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
 
+.info-card {
+    width: 30%; /* Creates 3 columns */
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* Keeps the smooth hover effect from earlier */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.info-card h4 {
+    margin-top: 0;
+    color: #cc0000;
+}
+
+.info-card p {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
 /* Responsive Rules for Tablet */
 @media (max-width: 800px) {
     .gallery-box {
